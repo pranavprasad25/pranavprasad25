@@ -12,7 +12,6 @@ I'm interested in building practical AI systems, experimenting with AI agents, a
 -  Computer Vision & AI-powered Applications
 -  Automated Machine Learning & Intelligent Automation
 -  Agentic AI + IoT Systems
--  Building practical AI projects and exploring new technologies
  
 ## Tech Stack
 
@@ -26,18 +25,18 @@ I'm interested in building practical AI systems, experimenting with AI agents, a
 ![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=flat&logo=opencv&logoColor=white)
 ![MediaPipe](https://img.shields.io/badge/MediaPipe-0097A7?style=flat&logo=google&logoColor=white)
 
-## 💡 Featured Projects
+##  Featured Projects
 
-### ✋ Gesture AI Assistant
+### Gesture AI Assistant
 AI-powered hand gesture control system using OpenCV and MediaPipe, with virtual mouse, volume control, screenshots, media controls, voice assistance, and a Flask dashboard.
 
-### 🏥 HealthOS AI
+### HealthOS AI
 AI-powered healthcare platform using AI agents and MCP to manage health records and provide personalized medical insights, including prescription analysis, medication reminders, appointment scheduling, and recommendations.
 
-### ⚡ NitroStack MCP Creator
+### NitroStack MCP Creator
 Built and deployed AI applications using the Model Context Protocol (MCP), integrating tools, APIs, and agent workflows in a hackathon environment.
 
-## 🤝 Let's Connect
+## Let's Connect
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Pranav_Prasad-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/pranav-prasad-94a36138b)
 
