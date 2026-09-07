@@ -10,8 +10,8 @@ I'm interested in building practical AI systems, experimenting with AI agents, a
 -  AI Agents, MCP & Agentic AI
 -  RAG, Prompt Engineering & Modern AI Development
 -  Computer Vision & AI-powered Applications
--  Automated Machine Learning & Intelligent Automation
 -  Agentic AI + IoT Systems
+-  Automated Machine Learning & Intelligent Automation
  
 ## Tech Stack
 
@@ -25,16 +25,19 @@ I'm interested in building practical AI systems, experimenting with AI agents, a
 ![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=flat&logo=opencv&logoColor=white)
 ![MediaPipe](https://img.shields.io/badge/MediaPipe-0097A7?style=flat&logo=google&logoColor=white)
 
-##  Featured Projects
+## Currently working on
 
-### Gesture AI Assistant
-AI-powered hand gesture control system using OpenCV and MediaPipe, with virtual mouse, volume control, screenshots, media controls, voice assistance, and a Flask dashboard.
+-  **Thermal-Aware CPU Architecture**  
+  Designing a processor architecture that detects thermal hotspots and dynamically shifts computation away from overheated regions for improved thermal efficiency.
 
-### HealthOS AI
-AI-powered healthcare platform using AI agents and MCP to manage health records and provide personalized medical insights, including prescription analysis, medication reminders, appointment scheduling, and recommendations.
+-  **AI-Powered Conveyor Health Monitoring**  
+  Exploring an IoT + AI system where sensor data monitors conveyor health while computer vision detects cracks, tears, and misalignment, with ML models learning operating patterns for predictive maintenance.
 
-### NitroStack MCP Creator
-Built and deployed AI applications using the Model Context Protocol (MCP), integrating tools, APIs, and agent workflows in a hackathon environment.
+-  **Logic Quest**  
+  Learning FPGA-based digital design using Quartus and Verilog, understanding RISC-V and CPU architecture, and exploring digital circuits, PWM, and frequency scaling while following Git/GitHub and coding practices.
+
+-  **INIT Website**  
+  Contributing to the development and maintenance of the INIT website, working on the improvements, and keeping the platform updated.
 
 ## Let's Connect
 
