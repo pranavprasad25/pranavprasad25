@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="240" viewBox="0 0 800 240">
+  <style>
+    .g-blob1 { animation: g-drift1 3s ease-in-out infinite; }
+    .g-blob2 { animation: g-drift2 3s ease-in-out infinite; }
+    .g-blob3 { animation: g-drift3 3s ease-in-out infinite; }
+    @keyframes g-drift1 {
+      0%, 100% { transform: translate(0, 0); }
+      25% { transform: translate(40px, -25px); }
+      50% { transform: translate(0, -50px); }
+      75% { transform: translate(-40px, -25px); }
+    }
+    @keyframes g-drift2 {
+      0%, 100% { transform: translate(0, 0); }
+      25% { transform: translate(-30px, 25px); }
+      50% { transform: translate(0, 50px); }
+      75% { transform: translate(30px, 25px); }
+    }
+    @keyframes g-drift3 {
+      0%, 100% { transform: translate(0, 0); }
+      25% { transform: translate(25px, -40px); }
+      50% { transform: translate(-40px, 0); }
+      75% { transform: translate(25px, 40px); }
+    }
+    .g-p { animation: g-pulse 3s ease-in-out infinite; }
+    .p1 { animation-delay: -0.6s; }
+    .p2 { animation-delay: -1.2s; }
+    .p3 { animation-delay: -1.8s; }
+    .p4 { animation-delay: -2.4s; }
+    @keyframes g-pulse {
+      0%, 100% { opacity: 0.15; }
+      50% { opacity: 0.32; }
+    }
+  </style>
+  <defs>
+    <filter id="g-blur" x="-30%" y="-30%" width="160%" height="160%" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="60"/>
+    </filter>
+    <filter id="g-card-shadow" x="-30%" y="-30%" width="160%" height="160%" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="10" stdDeviation="15" flood-color="#000" flood-opacity="0.5"/>
+    </filter>
+    <filter id="g-mini-shadow" x="-30%" y="-30%" width="160%" height="160%" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#000" flood-opacity="0.35"/>
+    </filter>
+    <radialGradient id="g-blob1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#7c3aed" stop-opacity="0.55"/>
+      <stop offset="60%" stop-color="#7c3aed" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#7c3aed" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="g-blob2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ff1f40" stop-opacity="0.55"/>
+      <stop offset="60%" stop-color="#ff1f40" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#ff1f40" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="g-blob3" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f472b6" stop-opacity="0.55"/>
+      <stop offset="60%" stop-color="#f472b6" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#f472b6" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="g-vignette" cx="50%" cy="50%" r="65%">
+      <stop offset="50%" stop-color="rgb(0,0,0)" stop-opacity="0"/>
+      <stop offset="100%" stop-color="rgb(0,0,0)" stop-opacity="0.45"/>
+    </radialGradient>
+  </defs>
+  
+  <rect width="800" height="240" fill="#0b0b12"/>
+  <g filter="url(#g-blur)" class="g-blobs">
+    <circle class="g-blob1" cx="224.00000000000003" cy="132" r="220" fill="url(#g-blob1)"/>
+    <circle class="g-blob2" cx="576" cy="108" r="240" fill="url(#g-blob2)"/>
+    <circle class="g-blob3" cx="400" cy="252" r="200" fill="url(#g-blob3)"/>
+  </g>
+  <rect width="800" height="240" fill="url(#g-vignette)"/>
+  <g class="g-particles"><circle class="g-p p0" cx="400" cy="120" r="1.2" fill="#ffffff" opacity="0.2"/><circle class="g-p p1" cx="768.68" cy="96.67" r="1.2" fill="#ffffff" opacity="0.2"/><circle class="g-p p2" cx="422.89" cy="233.7" r="1.2" fill="#ffffff" opacity="0.2"/><circle class="g-p p3" cx="623.29" cy="12.36" r="1.2" fill="#ffffff" opacity="0.2"/><circle class="g-p p4" cx="549.49" cy="220.57" r="1.2" fill="#ffffff" opacity="0.2"/><circle class="g-p p0" cx="581.39" cy="23.99" r="1.2" fill="#ffffff" opacity="0.2"/><circle class="g-p p1" cx="650.43" cy="134.63" r="1.2" fill="#ffffff" opacity="0.2"/><circle class="g-p p2" cx="466.23" cy="57.06" r="1.2" fill="#ffffff" opacity="0.2"/><circle class="g-p p3" cx="131.64" cy="141.6" r="1.2" fill="#ffffff" opacity="0.2"/><circle class="g-p p4" cx="215.85" cy="26.75" r="1.2" fill="#ffffff" opacity="0.2"/><circle class="g-p p0" cx="388.6" cy="189.9" r="1.2" fill="#ffffff" opacity="0.2"/><circle class="g-p p1" cx="328.48" cy="60.32" r="1.2" fill="#ffffff" opacity="0.2"/><circle class="g-p p2" cx="71.62" cy="132.94" r="1.2" fill="#ffffff" opacity="0.2"/><circle class="g-p p3" cx="398.07" cy="32.29" r="1.2" fill="#ffffff" opacity="0.2"/><circle class="g-p p4" cx="326.41" cy="174.39" r="1.2" fill="#ffffff" opacity="0.2"/><circle class="g-p p0" cx="576.73" cy="100.31" r="1.2" fill="#ffffff" opacity="0.2"/></g>
+  
+  
+  <g filter="url(#g-card-shadow)">
+    <rect x="30" y="30" width="740" height="180" rx="18" ry="18" fill="rgba(255,255,255,0.04)"/>
+  </g>
+  <rect x="30.5" y="30.5" width="739" height="179" rx="18" ry="18" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+  <rect x="31.5" y="31.5" width="737" height="177" rx="17" ry="17" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  
+  <text x="62" y="80" fill="#f5f5f7" font-family='"Inter", system-ui, sans-serif' font-size="28" font-weight="700">Stack</text>
+  <text x="62" y="100" fill="#f5f5f7" opacity="0.55" font-family='"Inter", system-ui, sans-serif' font-size="13" font-weight="400">12 tools I reach for</text>
+  <rect x="62" y="122" width="69" height="25" rx="12.5" ry="12.5" fill="#7c3aed" fill-opacity="0.18" stroke="#7c3aed" stroke-opacity="0.5" stroke-width="1"/>
+  <text x="73" y="138.83333333333334" fill="#f5f5f7" font-family="ui-monospace, SFMono-Regular, monospace" font-size="13" font-weight="500">Python</text>
+  <rect x="139" y="122" width="53" height="25" rx="12.5" ry="12.5" fill="#7c3aed" fill-opacity="0.18" stroke="#7c3aed" stroke-opacity="0.5" stroke-width="1"/>
+  <text x="150" y="138.83333333333334" fill="#f5f5f7" font-family="ui-monospace, SFMono-Regular, monospace" font-size="13" font-weight="500">LLMs</text>
+  <rect x="200" y="122" width="45" height="25" rx="12.5" ry="12.5" fill="#7c3aed" fill-opacity="0.18" stroke="#7c3aed" stroke-opacity="0.5" stroke-width="1"/>
+  <text x="211" y="138.83333333333334" fill="#f5f5f7" font-family="ui-monospace, SFMono-Regular, monospace" font-size="13" font-weight="500">Git</text>
+  <rect x="253" y="122" width="53" height="25" rx="12.5" ry="12.5" fill="#7c3aed" fill-opacity="0.18" stroke="#7c3aed" stroke-opacity="0.5" stroke-width="1"/>
+  <text x="264" y="138.83333333333334" fill="#f5f5f7" font-family="ui-monospace, SFMono-Regular, monospace" font-size="13" font-weight="500">HTML</text>
+  <rect x="314" y="122" width="45" height="25" rx="12.5" ry="12.5" fill="#7c3aed" fill-opacity="0.18" stroke="#7c3aed" stroke-opacity="0.5" stroke-width="1"/>
+  <text x="325" y="138.83333333333334" fill="#f5f5f7" font-family="ui-monospace, SFMono-Regular, monospace" font-size="13" font-weight="500">CSS</text>
+  <rect x="367" y="122" width="69" height="25" rx="12.5" ry="12.5" fill="#7c3aed" fill-opacity="0.18" stroke="#7c3aed" stroke-opacity="0.5" stroke-width="1"/>
+  <text x="378" y="138.83333333333334" fill="#f5f5f7" font-family="ui-monospace, SFMono-Regular, monospace" font-size="13" font-weight="500">OpenCV</text>
+  <rect x="444" y="122" width="92" height="25" rx="12.5" ry="12.5" fill="#7c3aed" fill-opacity="0.18" stroke="#7c3aed" stroke-opacity="0.5" stroke-width="1"/>
+  <text x="455" y="138.83333333333334" fill="#f5f5f7" font-family="ui-monospace, SFMono-Regular, monospace" font-size="13" font-weight="500">MediaPipe</text>
+  <rect x="544" y="122" width="100" height="25" rx="12.5" ry="12.5" fill="#7c3aed" fill-opacity="0.18" stroke="#7c3aed" stroke-opacity="0.5" stroke-width="1"/>
+  <text x="555" y="138.83333333333334" fill="#f5f5f7" font-family="ui-monospace, SFMono-Regular, monospace" font-size="13" font-weight="500">CPU Design</text>
+  <rect x="652" y="122" width="61" height="25" rx="12.5" ry="12.5" fill="#7c3aed" fill-opacity="0.18" stroke="#7c3aed" stroke-opacity="0.5" stroke-width="1"/>
+  <text x="663" y="138.83333333333334" fill="#f5f5f7" font-family="ui-monospace, SFMono-Regular, monospace" font-size="13" font-weight="500">Linux</text>
+  <rect x="62" y="155" width="77" height="25" rx="12.5" ry="12.5" fill="#7c3aed" fill-opacity="0.18" stroke="#7c3aed" stroke-opacity="0.5" stroke-width="1"/>
+  <text x="73" y="171.83333333333334" fill="#f5f5f7" font-family="ui-monospace, SFMono-Regular, monospace" font-size="13" font-weight="500">Verilog</text>
+  <rect x="147" y="155" width="45" height="25" rx="12.5" ry="12.5" fill="#7c3aed" fill-opacity="0.18" stroke="#7c3aed" stroke-opacity="0.5" stroke-width="1"/>
+  <text x="158" y="171.83333333333334" fill="#f5f5f7" font-family="ui-monospace, SFMono-Regular, monospace" font-size="13" font-weight="500">C++</text>
+  <rect x="200" y="155" width="139" height="25" rx="12.5" ry="12.5" fill="#7c3aed" fill-opacity="0.18" stroke="#7c3aed" stroke-opacity="0.5" stroke-width="1"/>
+  <text x="211" y="171.83333333333334" fill="#f5f5f7" font-family="ui-monospace, SFMono-Regular, monospace" font-size="13" font-weight="500">Embedded design</text>
+  <rect x="0.5" y="0.5" width="799" height="239" rx="14" ry="14" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+</svg>
