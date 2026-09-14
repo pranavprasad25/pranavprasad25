@@ -1,6 +1,7 @@
 <p align="center">
-  <img src="./assets/about_final.svg" width="100%">
+  <img src="./assets/about-final.svg" width="100%">
 </p>
+
 
 ## Currently Exploring
 
@@ -11,7 +12,12 @@
 - Automated Machine Learning & Intelligent Automation
 - Embedded Systems and Verilog Design
 
+
 ## Stack & Tools
+
+<p align="center">
+  <img src="./assets/skills_final.svg" width="100%">
+</p>
 
 <p align="center">
   <img src="https://skillicons.dev/icons?i=python,flask,git,html,css,cpp,linux" />
@@ -28,6 +34,7 @@
   <img src="https://img.shields.io/badge/MediaPipe-0097A7?style=for-the-badge" />
   <img src="https://img.shields.io/badge/Verilog-000000?style=for-the-badge" />
 </p>
+
 
 ## Currently Working On
 
@@ -52,6 +59,7 @@ Logic Quest is an FPGA and digital-design focused learning track that builds ski
 ### INIT Website
 
 Contributing to the development and maintenance of the INIT website, working on improvements and keeping the platform updated.
+
 
 ## Let's Connect
 
