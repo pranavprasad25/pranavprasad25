@@ -1,8 +1,8 @@
 <!-- HEADER BANNER -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0D1117,30:0a0a1a,70:1a0533,100:6C5CE7&height=240&section=header&text=Pranav%20Prasad%20K&fontSize=62&fontColor=ffffff&animation=fadeIn&fontAlignY=44&desc=AI%20%C2%B7%20LLM%20Systems%20%C2%B7%20Embedded%20%C2%B7%20Builder&descAlignY=64&descSize=22&descColor=a29bfe" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0D1117,20:0a0818,60:1a0533,100:6C5CE7&height=260&section=header&text=Pranav%20Prasad%20K&fontSize=68&fontColor=ffffff&animation=fadeIn&fontAlignY=44&desc=AI%20%C2%B7%20LLM%20Systems%20%C2%B7%20Embedded%20%C2%B7%20Builder&descAlignY=64&descSize=22&descColor=a29bfe" width="100%" />
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=19&duration=2600&pause=800&color=6C5CE7&center=true&vCenter=true&width=720&lines=Building+LLMs+from+scratch+%E2%80%94+then+automating+everything+else;Agentic+AI+%C2%B7+System+Automation+%C2%B7+On-device+LLMs;IoT+%C2%B7+Computer+Vision+%C2%B7+Robotics+%C2%B7+Edge+AI;Open+Source+%C2%B7+Always+Building+%C2%B7+Never+Stopping" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=2400&pause=700&color=6C5CE7&center=true&vCenter=true&width=750&lines=Building+LLMs+from+scratch+%E2%80%94+then+automating+everything+else;Agentic+AI+%C2%B7+System+Automation+%C2%B7+On-device+LLMs;IoT+%C2%B7+Computer+Vision+%C2%B7+Robotics+%C2%B7+Edge+AI;Open+Source+%C2%B7+Always+Building+%C2%B7+Never+Stopping" alt="Typing SVG" />
 </p>
 
 <p align="center">
@@ -26,20 +26,21 @@
 
 ```python
 class PranavPrasad:
-    degree        = "B.Tech · Computer & Communication Engineering"
-    grad          = 2029
-
-    focus         = ["Agentic AI", "LLM Systems", "System Automation", "IoT", "Computer Vision"]
-    obsession     = "AI x Embedded — most people pick one. I do both."
-
-    currently     = "shipping things before fully understanding them, then understanding them"
+    degree    = "B.Tech · Computer & Communication Engineering"
+    focus     = ["Agentic AI", "LLM Systems", "System Automation", "IoT", "Computer Vision"]
+    obsession = "AI x Embedded — most people pick one. I do both."
 
     def what_drives_me(self):
-        return (
-            "I like systems that blur the line between software and hardware. "
-            "AI agents that talk to sensors. Models that run on edge. "
-            "Stuff that actually does something in the physical world."
-        )
+        return """
+        'Any sufficiently advanced technology is indistinguishable from magic.'
+        — Arthur C. Clarke
+
+        I build the magic.
+
+        Systems where AI talks to hardware. Models that think on the edge.
+        Agents that don't just respond — they act, adapt, and automate.
+        The physical world is the final frontier. I'm here for it.
+        """
 ```
 
 <br />
@@ -47,8 +48,6 @@ class PranavPrasad:
 ---
 
 ## project constellation
-
-<sub>not a roadmap — just the trail my work keeps drawing</sub>
 
 <br />
 
@@ -139,9 +138,9 @@ AI-powered thermal management that monitors temperature data and dynamically opt
 
 ### Gesture AI Assistant
 
-Hands-free control of mouse, volume, screenshots, and media via hand gestures plus a voice assistant and Flask dashboard.
+Hands-free control of mouse, volume, screenshots, and media via hand gestures plus a voice assistant.
 
-![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=flat&logo=opencv&logoColor=white) ![MediaPipe](https://img.shields.io/badge/MediaPipe-0097A7?style=flat) ![Flask](https://img.shields.io/badge/Flask-000000?style=flat&logo=flask&logoColor=white) ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
+![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=flat&logo=opencv&logoColor=white) ![MediaPipe](https://img.shields.io/badge/MediaPipe-0097A7?style=flat) ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
 
 </td>
 <td width="50%" valign="top">
@@ -189,55 +188,34 @@ IoT and AI system where computer vision detects cracks, tears, and misalignment,
 
 ## stack
 
-<sub>tools I actually reach for</sub><br/>
-<sub>not a census. just the recurring cast.</sub>
+<br />
+
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=2000&pause=600&color=a29bfe&center=true&vCenter=true&width=620&lines=Python+%C2%B7+C%2B%2B+%C2%B7+C;PyTorch+%C2%B7+LLMs+%C2%B7+Agentic+AI;OpenCV+%C2%B7+MediaPipe+%C2%B7+MCP+%C2%B7+RAG;Raspberry+Pi+%C2%B7+Linux+%C2%B7+MQTT+%C2%B7+RISC-V;INT8+Quantization+%C2%B7+On-device+Models" alt="Stack Typing" />
+</p>
 
 <br />
 
-<img src="./assets/stack-timeline.svg" width="100%" />
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=py,cpp,c,pytorch,opencv&theme=dark&perline=5" />
+</p>
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=linux,raspberrypi,git,github,vscode&theme=dark&perline=5" />
+</p>
 
 <br />
 
-<table>
-<tr>
-<td valign="top" width="33%">
-
-**languages**
-
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
-![C++](https://img.shields.io/badge/C++-00599C?style=flat&logo=cplusplus&logoColor=white)
-![C](https://img.shields.io/badge/C-A8B9CC?style=flat&logo=c&logoColor=black)
-![HTML](https://img.shields.io/badge/HTML-E34F26?style=flat&logo=html5&logoColor=white)
-![CSS](https://img.shields.io/badge/CSS-1572B6?style=flat&logo=css3&logoColor=white)
-
-</td>
-<td valign="top" width="33%">
-
-**AI · ML · agents**
-
-![LLMs](https://img.shields.io/badge/LLMs-412991?style=flat)
-![MCP](https://img.shields.io/badge/MCP-6C5CE7?style=flat)
-![Agentic AI](https://img.shields.io/badge/Agentic_AI-00CEC9?style=flat)
-![RAG](https://img.shields.io/badge/RAG-E17055?style=flat)
-![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=flat&logo=opencv&logoColor=white)
-![MediaPipe](https://img.shields.io/badge/MediaPipe-0097A7?style=flat)
-![Quantization](https://img.shields.io/badge/Quantization-55efc4?style=flat)
-
-</td>
-<td valign="top" width="33%">
-
-**embedded · IoT**
-
-![Arduino](https://img.shields.io/badge/Arduino-00878A?style=flat&logo=arduino&logoColor=white)
-![Raspberry Pi](https://img.shields.io/badge/Raspberry_Pi-A22846?style=flat&logo=raspberrypi&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat&logo=linux&logoColor=black)
-![MQTT](https://img.shields.io/badge/MQTT-660066?style=flat)
-![Verilog](https://img.shields.io/badge/Verilog-000000?style=flat)
-![RISC-V](https://img.shields.io/badge/RISC--V-2c3e50?style=flat)
-
-</td>
-</tr>
-</table>
+<p align="center">
+  <img src="https://img.shields.io/badge/LLMs-412991?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Agentic_AI-00CEC9?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/MCP-6C5CE7?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/RAG-E17055?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/INT8_Quantization-55efc4?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/MediaPipe-0097A7?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/MQTT-660066?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/RISC--V-2c3e50?style=for-the-badge" />
+</p>
 
 <br />
 
@@ -246,9 +224,9 @@ IoT and AI system where computer vision detects cracks, tears, and misalignment,
 ## numbers
 
 <p align="center">
-  <img height="175" src="https://github-readme-stats.vercel.app/api?username=pranavprasad25&show_icons=true&hide_border=true&bg_color=0D1117&title_color=6C5CE7&icon_color=00CEC9&text_color=dfe6e9&count_private=true&rank_icon=github" />
+  <img height="180" src="https://github-readme-stats.vercel.app/api?username=pranavprasad25&show_icons=true&hide_border=true&bg_color=0D1117&title_color=6C5CE7&icon_color=00CEC9&text_color=dfe6e9&count_private=true&rank_icon=github" />
   &nbsp;&nbsp;
-  <img height="175" src="https://github-readme-stats.vercel.app/api/top-langs/?username=pranavprasad25&layout=compact&hide_border=true&bg_color=0D1117&title_color=6C5CE7&text_color=dfe6e9&langs_count=8" />
+  <img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=pranavprasad25&layout=compact&hide_border=true&bg_color=0D1117&title_color=6C5CE7&text_color=dfe6e9&langs_count=8" />
 </p>
 
 <br />
@@ -260,7 +238,7 @@ IoT and AI system where computer vision detects cracks, tears, and misalignment,
 <br />
 
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=pranavprasad25&bg_color=0D1117&color=a29bfe&line=6C5CE7&point=00CEC9&area=true&hide_border=true" width="95%" />
+  <img src="https://raw.githubusercontent.com/pranavprasad25/pranavprasad25/output/github-contribution-grid-snake-dark.svg" alt="contribution snake" />
 </p>
 
 <br />
