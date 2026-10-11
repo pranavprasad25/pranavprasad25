@@ -22,136 +22,152 @@
 
 ---
 
-## `$ whoami`
+## `whoami`
 
 ```python
 class PranavPrasad:
-    degree    = "B.Tech · Computer & Communication Engineering"
-    focus     = ["Agentic AI", "LLM Systems", "System Automation", "IoT", "Computer Vision"]
+    degree = "B.Tech · Computer & Communication Engineering"
+
+    building = [
+        "Agentic AI & LLM Systems",
+        "AI Agents & MCP",
+        "Computer Vision",
+        "Intelligent Automation",
+        "AIoT & Embedded Systems",
+    ]
+
+    exploring = ["Local AI", "RAG", "Robotics", "Edge Intelligence"]
+
     obsession = "AI x Embedded — most people pick one. I do both."
 
-    def what_drives_me(self):
-        return """
-        'Any sufficiently advanced technology is indistinguishable from magic.'
-        — Arthur C. Clarke
-
-        I build the magic.
-
-        Systems where AI talks to hardware. Models that think on the edge.
-        Agents that don't just respond — they act, adapt, and automate.
-        The physical world is the final frontier. I'm here for it.
-        """
+    current = "Turning impossible-sounding ideas into working systems."
 ```
 
 <br />
 
 ---
 
-## project constellation
+## Projects
 
 <br />
 
-<!-- FLAGSHIP -->
 <table>
 <tr>
-<td width="100%" valign="top">
+<td width="50%" valign="top">
 
-<br />
+<img src="./assets/cards/shadow_automator.svg" width="100%" alt="Shadow Automator" />
 
-<p align="center">
-<sub><code>LLM · multimodal · system-automation</code> &nbsp;|&nbsp; <strong>ongoing &nbsp;·&nbsp; open-source</strong></sub>
-</p>
+### Shadow Automator
+*Privacy-First, AI-Powered Desktop Automation Agent*
 
-<h3 align="center">Shadow Automator</h3>
+A privacy-first, AI-powered desktop automation agent that converts natural-language instructions into executable, multi-step workflows. It combines vision-language models (VLMs), local LLM inference, computer vision, GUI automation, and visual state validation to operate desktop applications through natural-language commands.
 
-<p align="center"><em>The biggest project to date — and still growing.</em></p>
+Instead of relying on hardcoded screen coordinates or manually scripted interactions, the system captures the desktop, identifies UI elements from visual context, determines where actions should occur, and executes mouse and keyboard operations with self-healing feedback loops.
 
-A multimodal AI system built on **Qwen 3.6B** with **INT8 quantization**, giving it a full autonomous command layer over an entire operating system. One natural-language command is all it takes.
-
-The model thinks, reasons through a chain of thought, and selects the most context-aware response before acting. It fetches real-time information, understands intent, and executes complex multi-step workflows without hand-holding.
-
-**Capabilities:**
-
-- Send emails — provide only a recipient name and intent, the system handles the rest
-- Open any application on the system via voice or text command
-- Send WhatsApp messages to contacts on command
-- Control Spotify — open and play any song by name
-- Full real-time web awareness — fetches current events and live data
-- Chain-of-thought reasoning before every action for high-accuracy decisions
-
-Planned for release as a fully open-source project.
-
-<p align="center">
+<p align="left">
   <img src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white" />
-  <img src="https://img.shields.io/badge/Qwen_3.6B-1a1a2e?style=flat" />
-  <img src="https://img.shields.io/badge/INT8_Quantization-6C5CE7?style=flat" />
-  <img src="https://img.shields.io/badge/Multimodal_AI-00CEC9?style=flat" />
-  <img src="https://img.shields.io/badge/System_Automation-E17055?style=flat" />
-  <img src="https://img.shields.io/badge/Open_Source-2ecc71?style=flat" />
-  <img src="https://img.shields.io/badge/Hacktoberfest-FF6600?style=flat&logo=dev.to&logoColor=white" />
+  <img src="https://img.shields.io/badge/Qwen3--VL-Vision_Language-7c3aed?style=flat" />
+  <img src="https://img.shields.io/badge/llama.cpp-Local_AI-1e1e1e?style=flat" />
+  <img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=flat&logo=opencv&logoColor=white" />
+  <img src="https://img.shields.io/badge/PyAutoGUI-2ea043?style=flat" />
 </p>
 
-<br />
+[**➜ [ access repository ]**](https://github.com/pranavprasad25)
+
+</td>
+<td width="50%" valign="top">
+
+<img src="./assets/cards/amazon_ml.svg" width="100%" alt="Amazon ML Challenge: Business Entity Resolution" />
+
+### Amazon ML Challenge 2026
+*High-Performance, GPU-Accelerated Business Entity Resolution*
+
+Developed a scalable machine learning pipeline for Business Entity Resolution (ER), identifying matching business records across multiple independent data sources without relying on shared unique identifiers.
+
+The system addresses inconsistencies in business names, legal suffixes, addresses, postal codes, and geographical information using text normalization, multi-key candidate blocking, fuzzy similarity metrics, and GPU-accelerated gradient-boosted classifiers.
+
+<p align="left">
+  <img src="https://img.shields.io/badge/Python-3.11-3776AB?style=flat&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/XGBoost-FF6F00?style=flat" />
+  <img src="https://img.shields.io/badge/LightGBM-00A98F?style=flat" />
+  <img src="https://img.shields.io/badge/RapidFuzz-8A2BE2?style=flat" />
+</p>
+
+[**➜ [ access repository ]**](https://github.com/pranavprasad25/ML-HACK)
+
+<details>
+<summary><b>⚙️ Technical Architecture & Benchmarks</b></summary>
+
+<br>
+
+#### 1. Data Preprocessing and Normalization
+Unicode NFKD normalization, lowercasing, regex address expansions (e.g. *Pvt Ltd* vs *Private Limited*), and country-specific postal code parsers (India, USA, France).
+
+#### 2. Multi-Key Candidate Blocking
+Five inverted-index strategies avoid exhaustive pairwise comparisons across large datasets using compound keys, significant name tokens, exact postal codes, phonetic Soundex, and 3-character prefixes.
+
+#### 3. Pairwise Feature Engineering
+16-feature similarity vectors using RapidFuzz (Levenshtein, Jaro-Winkler, token similarity, Jaccard, digit overlap, and exact postal matching).
+
+#### 4. GPU-Accelerated Machine Learning
+XGBoost and LightGBM classifiers trained with 5-fold stratified cross-validation, negative sampling for class imbalance, and NVIDIA CUDA acceleration.
+
+#### 5. Precision-Focused Threshold Optimization
+Predictions optimized against Macro F0.5, sweeping decision thresholds to minimize false merges while preserving match coverage.
+
+#### Reported Benchmarks (RTX 5060 · 28 CPU Cores · 16 GB RAM)
+| Stage | Workload | Reported Runtime |
+| :--- | :--- | :--- |
+| Preprocessing | 17.6 million rows | ~3.7 minutes |
+| Candidate Blocking | 5.1 million test rows | ~1.5 minutes |
+| Feature Extraction & Inference | ~40 million pairs | ~3 minutes |
+| **End-to-End Pipeline** | **Full dataset** | **~7–9 minutes** |
+
+</details>
 
 </td>
 </tr>
-</table>
 
-<br />
-
-<table>
 <tr>
 <td width="50%" valign="top">
 
-`LLM · training · ML` &nbsp; *Amazon ML Hackathon*
-
-### ml_hack
-
-Built an LLM from scratch as part of an Amazon ML hackathon challenge. Given a raw dataset, the task was to architect and implement the full training pipeline end-to-end — no pretrained weights, no shortcuts.
-
-Covered dataset preprocessing, tokenization, model architecture design, training loops, evaluation metrics, and output validation.
-
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat&logo=pytorch&logoColor=white)
-![LLM](https://img.shields.io/badge/LLM_from_Scratch-412991?style=flat)
-![NLP](https://img.shields.io/badge/NLP-6C5CE7?style=flat)
-![ML](https://img.shields.io/badge/ML-00CEC9?style=flat)
-
-</td>
-<td width="50%" valign="top">
-
-`IoT · AI/ML · sensors` &nbsp; *ongoing*
+<img src="./assets/cards/thermoshift.svg" width="100%" alt="ThermoShift" />
 
 ### ThermoShift
+*Predictive Thermal Management Platform*
 
-AI-powered thermal management that monitors temperature data and dynamically optimizes cooling for improved efficiency and performance.
+AI-powered thermal management system that monitors live multi-point temperature telemetry and dynamically optimizes cooling duty cycles for improved efficiency and hardware performance.
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white) ![IoT](https://img.shields.io/badge/IoT-00CEC9?style=flat) ![AI/ML](https://img.shields.io/badge/AI%2FML-6C5CE7?style=flat) ![Sensors](https://img.shields.io/badge/Sensors-2d3436?style=flat)
+<br />
+
+<p align="left">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/IoT-00CEC9?style=flat" />
+  <img src="https://img.shields.io/badge/AI%2FML-6C5CE7?style=flat" />
+  <img src="https://img.shields.io/badge/Sensors-2d3436?style=flat" />
+</p>
+
+[**➜ [ access repository ]**](https://github.com/pranavprasad25/ThermalCore)
 
 </td>
-</tr>
-
-<tr>
 <td width="50%" valign="top">
 
-`CV · voice · agents`
+<img src="./assets/cards/gesture_ai.svg" width="100%" alt="Gesture AI Assistant" />
 
 ### Gesture AI Assistant
+*Vision-Based Human-Computer Interface*
 
-Hands-free control of mouse, volume, screenshots, and media via hand gestures plus a voice assistant.
+Hands-free control of mouse navigation, volume levels, screenshots, and media playback via real-time 21-point hand landmark estimation coupled with an integrated voice assistant.
 
-![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=flat&logo=opencv&logoColor=white) ![MediaPipe](https://img.shields.io/badge/MediaPipe-0097A7?style=flat) ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
+<br />
 
-</td>
-<td width="50%" valign="top">
+<p align="left">
+  <img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=flat&logo=opencv&logoColor=white" />
+  <img src="https://img.shields.io/badge/MediaPipe-0097A7?style=flat" />
+  <img src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white" />
+</p>
 
-`MCP · LLMs · agents`
-
-### HealthOS AI
-
-AI healthcare platform for health records, prescription analysis, medication reminders, and personalized health insights.
-
-![NitroStack](https://img.shields.io/badge/NitroStack-6C5CE7?style=flat) ![MCP](https://img.shields.io/badge/MCP-a29bfe?style=flat) ![LLMs](https://img.shields.io/badge/LLMs-412991?style=flat) ![AI Agents](https://img.shields.io/badge/AI_Agents-00CEC9?style=flat)
+[**➜ [ access repository ]**](https://github.com/pranavprasad25/Gesture-AI-Assistant)
 
 </td>
 </tr>
@@ -159,24 +175,112 @@ AI healthcare platform for health records, prescription analysis, medication rem
 <tr>
 <td width="50%" valign="top">
 
-`robotics · embedded · AI` &nbsp; *ongoing*
+<img src="./assets/cards/healthos.svg" width="100%" alt="HealthOS AI" />
 
-### PacBot
+### HealthOS AI
+*Agentic Healthcare Orchestration via MCP*
 
-Autonomous robotics platform combining sensors, embedded programming, and AI to navigate and operate in real-world environments.
+AI healthcare platform leveraging the Model Context Protocol (MCP) to unify electronic health records, prescription extraction, medication safety alerts, and personalized clinical insights.
 
-![C++](https://img.shields.io/badge/C++-00599C?style=flat&logo=cplusplus&logoColor=white) ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white) ![MQTT](https://img.shields.io/badge/MQTT-660066?style=flat) ![MuJoCo](https://img.shields.io/badge/MuJoCo-E17055?style=flat) ![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat&logo=linux&logoColor=black)
+<br />
+
+<p align="left">
+  <img src="https://img.shields.io/badge/NitroStack-6C5CE7?style=flat" />
+  <img src="https://img.shields.io/badge/MCP-a29bfe?style=flat" />
+  <img src="https://img.shields.io/badge/LLMs-412991?style=flat" />
+  <img src="https://img.shields.io/badge/AI_Agents-00CEC9?style=flat" />
+</p>
+
+[**➜ [ access repository ]**](https://github.com/pranavprasad25/Healthos-Ai)
 
 </td>
 <td width="50%" valign="top">
 
-`IoT · CV · ML` &nbsp; *ongoing*
+<img src="./assets/cards/pacbot.svg" width="100%" alt="PacBot" />
+
+### PacBot
+*Autonomous Robotics Navigation & Simulation*
+
+Autonomous robotics platform combining low-latency sensor fusion, embedded C++ control loops, and simulated physics in MuJoCo for real-time maze exploration and path planning.
+
+<br />
+
+<p align="left">
+  <img src="https://img.shields.io/badge/C++-00599C?style=flat&logo=cplusplus&logoColor=white" />
+  <img src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/MQTT-660066?style=flat" />
+  <img src="https://img.shields.io/badge/MuJoCo-E17055?style=flat" />
+  <img src="https://img.shields.io/badge/Linux-FCC624?style=flat&logo=linux&logoColor=black" />
+</p>
+
+[**➜ [ access repository ]**](https://github.com/pranavprasad25)
+
+</td>
+</tr>
+
+<tr>
+<td width="50%" valign="top">
+
+<img src="./assets/cards/conveyor.svg" width="100%" alt="Conveyor Health Monitor" />
 
 ### Conveyor Health Monitor
+*Industrial Computer Vision & IoT Inspection*
 
-IoT and AI system where computer vision detects cracks, tears, and misalignment, with ML models learning operating patterns for predictive maintenance.
+IoT and computer vision system detecting belt surface micro-cracks, tears, and tracking misalignment in real time, with machine learning models providing predictive maintenance alerts.
 
-![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=flat&logo=opencv&logoColor=white) ![IoT](https://img.shields.io/badge/IoT-00CEC9?style=flat) ![ML](https://img.shields.io/badge/ML-6C5CE7?style=flat) ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
+<br />
+
+<p align="left">
+  <img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=flat&logo=opencv&logoColor=white" />
+  <img src="https://img.shields.io/badge/IoT-00CEC9?style=flat" />
+  <img src="https://img.shields.io/badge/ML-6C5CE7?style=flat" />
+  <img src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white" />
+</p>
+
+[**➜ [ access repository ]**](https://github.com/pranavprasad25)
+
+</td>
+<td width="50%" valign="top">
+
+<br />
+
+### ➕ Add New Repository
+*Easily showcase your latest build or repository*
+
+<details>
+<summary><b>[ copy card template ]</b></summary>
+
+<br>
+
+```html
+<td width="50%" valign="top">
+
+<img src="./assets/cards/your_card.svg" width="100%" alt="Project Title" />
+
+### Project Title
+*Domain · Focus*
+
+Concise 2-3 sentence overview of the architecture and impact.
+
+<p align="left">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/Open_Source-2ecc71?style=flat" />
+</p>
+
+[**➜ [ access repository ]**](https://github.com/pranavprasad25/your-repo)
+
+</td>
+```
+
+</details>
+
+<br />
+
+<p align="center">
+  <a href="https://github.com/pranavprasad25?tab=repositories">
+    <img src="https://img.shields.io/badge/VIEW_ALL_REPOSITORIES-7C3AED?style=for-the-badge&logo=github&logoColor=white&labelColor=1A1330" alt="View All Repositories" />
+  </a>
+</p>
 
 </td>
 </tr>
@@ -186,60 +290,55 @@ IoT and AI system where computer vision detects cracks, tears, and misalignment,
 
 ---
 
-## stack
+## Stack
 
 <br />
 
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=2000&pause=600&color=a29bfe&center=true&vCenter=true&width=620&lines=Python+%C2%B7+C%2B%2B+%C2%B7+C;PyTorch+%C2%B7+LLMs+%C2%B7+Agentic+AI;OpenCV+%C2%B7+MediaPipe+%C2%B7+MCP+%C2%B7+RAG;Raspberry+Pi+%C2%B7+Linux+%C2%B7+MQTT+%C2%B7+RISC-V;INT8+Quantization+%C2%B7+On-device+Models" alt="Stack Typing" />
+### AI / ML
+<p align="left">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" />
+  <img src="https://img.shields.io/badge/Qwen-615EFF?style=for-the-badge&logo=qwen&logoColor=white" />
+  <img src="https://img.shields.io/badge/Hugging_Face-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black" />
+  <img src="https://img.shields.io/badge/llama.cpp-Local_AI-37474F?style=for-the-badge" />
 </p>
 
-<br />
-
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=py,cpp,c,pytorch,opencv&theme=dark&perline=5" />
+### Vision
+<p align="left">
+  <img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white" />
+  <img src="https://img.shields.io/badge/MediaPipe-0097A7?style=for-the-badge&logo=mediapipe&logoColor=white" />
 </p>
 
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=linux,raspberrypi,git,github,vscode&theme=dark&perline=5" />
+### Systems
+<p align="left">
+  <img src="https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=black" />
+  <img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white" />
 </p>
 
-<br />
+### Embedded / IoT
+<p align="left">
+  <img src="https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=arduino&logoColor=white" />
+  <img src="https://img.shields.io/badge/MQTT-660066?style=for-the-badge&logo=mqtt&logoColor=white" />
+  <img src="https://img.shields.io/badge/RISC--V-283272?style=for-the-badge&logo=riscv&logoColor=white" />
+</p>
 
-<p align="center">
-  <img src="https://img.shields.io/badge/LLMs-412991?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Agentic_AI-00CEC9?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/MCP-6C5CE7?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/RAG-E17055?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/INT8_Quantization-55efc4?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/MediaPipe-0097A7?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/MQTT-660066?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/RISC--V-2c3e50?style=for-the-badge" />
+### Dev
+<p align="left">
+  <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" />
+  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
 </p>
 
 <br />
 
 ---
 
-## numbers
+## Github Telemetry
 
-<p align="center">
-  <img height="180" src="https://github-readme-stats.vercel.app/api?username=pranavprasad25&show_icons=true&hide_border=true&bg_color=0D1117&title_color=6C5CE7&icon_color=00CEC9&text_color=dfe6e9&count_private=true&rank_icon=github" />
-  &nbsp;&nbsp;
-  <img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=pranavprasad25&layout=compact&hide_border=true&bg_color=0D1117&title_color=6C5CE7&text_color=dfe6e9&langs_count=8" />
-</p>
+<div align="center">
 
-<br />
+<img src="./skyline.svg" width="100%" alt="Skyline of @pranavprasad25's GitHub contributions" />
 
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=pranavprasad25&theme=transparent&hide_border=true&stroke=6C5CE7&ring=6C5CE7&fire=E17055&currStreakLabel=a29bfe&sideLabels=a29bfe&dates=636e72&currStreakNum=ffffff&sideNums=ffffff" />
-</p>
-
-<br />
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/pranavprasad25/pranavprasad25/output/github-contribution-grid-snake-dark.svg" alt="contribution snake" />
-</p>
+</div>
 
 <br />
 

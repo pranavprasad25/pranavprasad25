@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 160" width="100%" height="160">
+  <defs>
+    <pattern id="grid-ho" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#151f2e" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="100%" height="100%" rx="10" fill="#0b1118" stroke="#1b2738" stroke-width="1.5"/>
+  <rect width="100%" height="100%" rx="10" fill="url(#grid-ho)"/>
+  <text x="24" y="42" fill="#f0f6fc" font-family="ui-sans-serif, system-ui, -apple-system, sans-serif" font-size="18" font-weight="700">HealthOS AI</text>
+  <text x="24" y="64" fill="#06b6d4" font-family="ui-monospace, monospace" font-size="12" font-weight="600">mcp · llms · intelligent-agents</text>
+  <text x="24" y="112" fill="#8b949e" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13">unified healthcare context protocol</text>
+  <text x="24" y="132" fill="#6e7681" font-family="ui-monospace, monospace" font-size="11">records · prescriptions · insights</text>
+  <g transform="translate(285, 25)">
+    <path d="M 10 55 L 40 55 L 48 30 L 58 80 L 68 45 L 76 65 L 82 55 L 135 55" fill="none" stroke="#06b6d4" stroke-width="2.5"/>
+    <circle cx="48" cy="30" r="3.5" fill="#10b981"/>
+    <circle cx="58" cy="80" r="3.5" fill="#10b981"/>
+    <circle cx="105" cy="30" r="8" fill="none" stroke="#a855f7" stroke-width="1.5"/>
+    <line x1="105" y1="25" x2="105" y2="35" stroke="#a855f7" stroke-width="1.5"/>
+    <line x1="100" y1="30" x2="110" y2="30" stroke="#a855f7" stroke-width="1.5"/>
+  </g>
+</svg>
