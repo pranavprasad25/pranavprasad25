@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 130" width="900" height="130">
+  <defs>
+    <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00CEC9;stop-opacity:1" />
+      <stop offset="25%" style="stop-color:#6C5CE7;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#a29bfe;stop-opacity:1" />
+      <stop offset="75%" style="stop-color:#E17055;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#fdcb6e;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- background -->
+  <rect width="900" height="130" fill="#0D1117" rx="8"/>
+
+  <!-- horizontal line -->
+  <line x1="60" y1="68" x2="840" y2="68" stroke="url(#lineGrad)" stroke-width="2" opacity="0.6"/>
+
+  <!-- Python · dot + label -->
+  <circle cx="80"  cy="68" r="6" fill="#00CEC9"/>
+  <text x="80"  y="52" text-anchor="middle" font-family="monospace" font-size="12" fill="#dfe6e9">Python</text>
+
+  <!-- OpenCV · dot + label (below) -->
+  <circle cx="200" cy="68" r="6" fill="#5C3EE8"/>
+  <text x="200" y="92" text-anchor="middle" font-family="monospace" font-size="12" fill="#dfe6e9">OpenCV</text>
+
+  <!-- MediaPipe · dot + label -->
+  <circle cx="330" cy="68" r="6" fill="#6C5CE7"/>
+  <text x="330" y="52" text-anchor="middle" font-family="monospace" font-size="12" fill="#dfe6e9">MediaPipe</text>
+
+  <!-- Flask · dot + label (below) -->
+  <circle cx="450" cy="68" r="6" fill="#a29bfe"/>
+  <text x="450" y="92" text-anchor="middle" font-family="monospace" font-size="12" fill="#dfe6e9">Flask</text>
+
+  <!-- Arduino · dot + label -->
+  <circle cx="570" cy="68" r="6" fill="#E17055"/>
+  <text x="570" y="52" text-anchor="middle" font-family="monospace" font-size="12" fill="#dfe6e9">Arduino</text>
+
+  <!-- Linux · dot + label (below) -->
+  <circle cx="695" cy="68" r="6" fill="#fdcb6e"/>
+  <text x="695" y="92" text-anchor="middle" font-family="monospace" font-size="12" fill="#dfe6e9">Linux</text>
+
+  <!-- Git · dot + label -->
+  <circle cx="820" cy="68" r="6" fill="#fd79a8"/>
+  <text x="820" y="52" text-anchor="middle" font-family="monospace" font-size="12" fill="#dfe6e9">Git</text>
+</svg>
